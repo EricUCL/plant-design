@@ -5,12 +5,12 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/qing?serverTimezone=GMT%2b8
+    url: jdbc:mysql://localhost:3306/plant?serverTimezone=GMT%2b8
     username: root
-    password: 123456
-  redis:
-    host: 127.0.0.1
-    port: 6379
+    password: 12345678
+#  redis:
+#    host: 127.0.0.1
+#    port: 6379
   servlet:
     multipart:
       max-file-size: 100MB
@@ -25,5 +25,5 @@ mybatis-plus:
 
 files:
   upload:
-    path: D:/代码/小白做毕设2022/files/
+    path: D:/files/
 #    path: /home/files/

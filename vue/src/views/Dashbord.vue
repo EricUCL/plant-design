@@ -11,23 +11,23 @@
       </el-col>
       <el-col :span="6">
         <el-card style="color: #F56C6C">
-          <div><i class="el-icon-money" /> 销售总量</div>
+          <div><i class="el-icon-money" /> 数据总量</div>
           <div style="padding: 10px 0; text-align: center; font-weight: bold">
-            ￥ 1000000
+            1000000
           </div>
         </el-card>
       </el-col>
       <el-col :span="6">
         <el-card style="color: #67C23A">
-          <div><i class="el-icon-bank-card" /> 收益总额</div>
+          <div><i class="el-icon-bank-card" /> 蓄积量总额</div>
           <div style="padding: 10px 0; text-align: center; font-weight: bold">
-            ￥ 300000
+            300000
           </div>
         </el-card>
       </el-col>
       <el-col :span="6">
         <el-card style="color: #E6A23C">
-          <div><i class="el-icon-s-shop" /> 门店总数</div>
+          <div><i class="el-icon-s-shop" /> 取样地总数</div>
           <div style="padding: 10px 0; text-align: center; font-weight: bold">
             20
           </div>
@@ -60,7 +60,7 @@ export default {
   mounted() {  // 页面元素渲染之后再触发
     var option = {
       title: {
-        text: '各季度会员数量统计',
+        text: '各季度数量统计',
         subtext: '趋势图',
         left: 'center'
       },
@@ -80,22 +80,22 @@ export default {
       },
       series: [
         {
-          name: "星巴克",
+          name: "北京",
           data: [],
           type: 'bar'
         },
         {
-          name: "星巴克",
+          name: "北京",
           data: [],
           type: 'line'
         },
         {
-          name: "瑞幸咖啡",
+          name: "上海",
           data: [],
           type: 'bar'
         },
         {
-          name: "瑞幸咖啡",
+          name: "上海",
           data: [],
           type: 'line'
         }
@@ -120,7 +120,7 @@ export default {
       },
       series: [
         {
-          name: "星巴克",
+          name: "北京",
           type: 'pie',
           radius: '55%',
           center: ['25%', '70%'],
@@ -146,7 +146,7 @@ export default {
           }
         },
         {
-          name: "瑞幸咖啡",
+          name: "上海",
           type: 'pie',
           radius: '50%',
           center: ['75%', '50%'],
